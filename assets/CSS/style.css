@@ -269,10 +269,6 @@ header img{
     .contact{
         flex-direction: column;
     }
-}
-
-@media screen and (max-width: 650px){
-
     header img{
         height: 250px;
         width: 250px;
@@ -281,3 +277,4 @@ header img{
         width: 100%;
     }
 }
+
