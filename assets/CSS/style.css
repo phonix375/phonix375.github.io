@@ -6,6 +6,7 @@
 }
 html{
     font-size: 62.5%;
+    scroll-behavior: smooth;
 }
 @font-face {
     font-family: Pecita;
@@ -49,12 +50,17 @@ nav ul {
     padding-top: 2rem;
     
 }
+
 nav ul li a {
     color: white;
+    font-size: 3rem;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.555);
     text-decoration: none;
-    font-size: 2rem;
 }
-
+nav ul li a:hover{
+    text-shadow: 2px 4px rgba(0, 0, 0, 0.555);
+}
 /*end of menu*/
 /*my photo */
 header .my-pic{
@@ -110,10 +116,10 @@ header img{
 
 .projects{
     display: flex;
+    flex-wrap: nowrap;
     align-items: center;
     justify-content: space-around;
     padding-top: 35rem;
-    width: 100%;
 }
 .section-title-project{
     flex-basis: 40%;
@@ -122,6 +128,34 @@ header img{
     border-left: 3px solid #999999;
     justify-self: flex-end;
 }
+.projects-tiles {
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+}
+
+
+.project{
+    height: 350px;
+    width: 48%;
+    background-color: red;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 5px 1%;
+
+}
+.project h4{
+    font-size: 5rem;
+
+}
+.projects-tiles > :first-child {
+    width: 100%;
+}
+
 .section-title-project h2 {
     font-size: 8rem;
     color: #999999;
@@ -131,17 +165,51 @@ header img{
     padding-left: 4rem;
 }
 
-.projects-tiles {
+.project1{
+    background-image: url('../img/RunBuddy.PNG');
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+.project2{
+    background-image: url('../img/reCode.PNG');
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+.projecttext{
+    opacity: 0;
     display: flex;
-
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
 }
-.project{
-    height: 200px;
-    width: 200px;
-    background-color: red;
-    margin: 10px;
-
+.projecttext a{
+    text-decoration: none;
+    color: white;
+    text-align: center;
 }
+.project1:hover .projecttext{
+    opacity: 1;
+    background-color: #0000008a;
+    width: 100%;
+    height: 100%;
+}
+.overlay{
+    opacity: 0;
+}
+.project2:hover .projecttext{
+    opacity: 1;
+    background-color: #0000008a;
+    width: 100%;
+    height: 100%;
+}
+.project3:hover .projecttext{
+    opacity: 1;
+    background-color: #0000008a;
+    width: 100%;
+    height: 100%;
+}
+
 
 /*contact section*/
 
