@@ -4,6 +4,7 @@
     box-sizing: border-box;
 
 }
+/*make the rem unit to 10px*/
 html{
     font-size: 62.5%;
     scroll-behavior: smooth;
