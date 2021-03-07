@@ -88,7 +88,6 @@ header img{
     flex-basis: 40%;
     text-align: center;
     font-family:Pecita;
-    border-right: 3px solid #999999;
 }
 .section-title h2 {
     font-size: 8rem;
@@ -241,4 +240,35 @@ header img{
 .section-text{
     flex-basis: 60%;
     padding-left: 4rem;
+}
+
+
+/*media querys*/
+
+@media screen and (max-width: 980px){
+    .about{
+        flex-direction: column;
+    }
+    .section-title {
+        border-bottom: 3px solid #999999;
+        border-right: 0px;
+        margin-bottom: 8rem;
+    }
+    .projects{
+        flex-direction: column;
+    }
+    .projects-tiles{
+        order: 2;
+    }
+    .section-title-project{
+        order: 1;
+        margin-bottom: 8rem;
+        border-bottom: 3px solid #999999;
+        border-left: 0px;
+
+
+    }
+    .contact{
+        flex-direction: column;
+    }
 }
