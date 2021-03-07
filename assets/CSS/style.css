@@ -119,7 +119,8 @@ header img{
     flex-wrap: nowrap;
     align-items: center;
     justify-content: space-around;
-    padding-top: 35rem;
+    margin-top: 5rem;
+    padding-top: 30rem;
 }
 .section-title-project{
     flex-basis: 40%;
@@ -167,11 +168,17 @@ header img{
 
 .project1{
     background-image: url('../img/RunBuddy.PNG');
-    background-repeat: no-repeat;
-    background-size:cover;
+
 }
 .project2{
     background-image: url('../img/reCode.PNG');
+
+}
+.project3{
+    background-image: url('../img/soon.jpg');
+
+}
+.projectBackgroundSettings{
     background-repeat: no-repeat;
     background-size:cover;
 }
@@ -219,7 +226,7 @@ header img{
     justify-content: center;
     align-items: center;
     padding-top: 35rem;
-    height: 100vh;
+    padding-bottom: 35rem;
 }
 .section-title{
     flex-basis: 40%;
